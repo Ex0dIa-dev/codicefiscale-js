@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Calcola il tuo Codice Fiscale Online</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="cf-box">
+            <div class="header">
+                <img src="./img/rep-ita.png" width="84" height="90" id="logo">
+                <img src="./img/bandiera-ita.webp" height="70" id="bandiera">
+                <h2>Codice Fiscale Italiano</h2>
+                <h4>Calcola velocemente il tuo Codice Fiscale online!</h4>
+            </div>  <!-- Header -->       
+            
+            <!-- Form -->
+            <div class="input-container">
+                <div class="field surname">
+                    <label for="surname">Cognome</label>
+                    <input type="text" id="surname">
+                </div>
+                <div class="field name">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name">
+                </div>
+                <div class="field city">
+                    <label for="city">Luogo di Nascita</label>
+                    <input type="text" id="city">
+                </div>
+                <!-- maybe add field pronvice -->
+            </div>
+            <div class="gender-age-container">
+                <div class="field birthday">
+                    <label for="birthday">Data di Nascita</label>
+                    <input type="date" id="birthday" min="1900-01-01" value=""> <!-- Aggiungere Max Date = Today -->
+                </div>
+                <div class="field gender">
+                    <label for="gender">Sesso</label>
+                    <select id="gender">
+                        <option value="M">M</option>
+                        <option value="F">F</option>
+                    </select>
+                </div>
+            </div>
+            <div class="submit-container">
+                <div class="submit">
+                    <input type="button" value="Calcola" id="btn">
+                </div>
+            </div>
+        </div> <!-- CF-BOX -->
+
+        <div class="output-container">
+            <!-- Create a Box for output -->
+                <div class="box">
+                    <span id="output"></span>
+                </div>
+        </div>
+
+        <div class="footer">
+            <!-- author, etc.. -->
+        </div>
+    </div>
+
+    <script src="./js/main.js" type="module"></script>
+    <!-- <script src="test.js"></script> -->
+</body>
+</html>

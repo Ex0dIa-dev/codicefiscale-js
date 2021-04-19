@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+/* font-family: 'Orelega One', cursive; */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 8px;
+}
+
+/* Box Codice Fiscale */
+
+.cf-box {
+
+    width: 650px;
+    height: 450px;
+    margin-top: 3em;
+    background: #fff;
+    box-shadow: 0 4px 8px  rgba(46, 139, 87, 0.5);
+    border-radius: 0 0 5px 5px;
+}
+
+/* Box Header */
+
+.cf-box .header {
+    text-align: center;
+    width: 100%;
+    height: 20%;
+    background: seagreen;
+    border-radius: 5px 5px 0 0;
+}
+
+.cf-box .header h2 {
+    padding-top: 10px;
+    color: seashell;
+    font-size: 32px;
+}
+
+.cf-box .header h4 {
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+.cf-box .header #bandiera {
+    padding-top: 10px;
+    padding-right: 10px;
+    float: right;
+}
+
+.cf-box .header #logo {
+    float: left;
+}
+
+/* Input Container */
+
+.input-container {
+    padding: 8px 15px 0 15px;
+    display: grid;
+    grid-template-columns: 100%;
+    height: 60%;
+}
+
+
+.input-container .field #name, #surname, #city {
+    width: 100%;
+    height: 30px;
+    font-size: 25px;
+}
+
+
+/* Birthday and Gender Input Container */
+.gender-age-container {
+    padding: 0 15px 0 15px;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gender-age-container #gender {
+    font-size: 18px;
+    font-family: 'Orelega One', cursive;
+}
+
+.gender-age-container #birthday {
+    width: 175px;
+    font-size: 18px;
+    font-family: 'Orelega One', cursive;
+}
+
+/* LABEL */
+
+.input-container .field label {
+    font-family: 'Orelega One', cursive;
+    font-size: 20px;
+    color: seagreen;
+}
+
+.gender-age-container .field label {
+    padding-right: 5px;
+    font-family: 'Orelega One', cursive;
+    font-size: 20px;
+    color: seagreen;
+}
+
+/* FOCUS COLOR */
+
+.input-container .field input:focus, select:focus,
+.gender-age-container .field input:focus {
+    outline: 2.5px solid seagreen;
+}
+
+/* UPPERCASE TEXT */
+.input-container .field input {
+    text-transform: uppercase;
+}
+
+
+/* SUBMIT CONTAINER */
+
+.submit-container {
+    display: flex;
+    justify-content: center;
+}
+
+.submit-container #btn {
+    width: 125px;
+    height: 25px;
+    margin: auto;
+    border: 0;
+    border-radius: 4px;
+    color: seashell;
+    background: seagreen;
+    font-size: 18px;
+}
+
+/* OUTPUT BOX */
+.output-container {
+    margin-top: 1.5em;
+    width: 600px;
+    height: 40px;
+    box-shadow: 0 4px 8px rgba(46, 139, 87, 0.5);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.output-container #output {
+    font-family: 'Orelega One', cursive;
+    font-size: 35px;   
+    /* color: seagreen; */
+}
