@@ -58,7 +58,9 @@ function getMonthChar(d) {
 //input = date(birthday) and gender
 function getDay(d, g) {
 
-    if (g === "F") {return d.getUTCDate() + 40} else {return d.getUTCDate()}
+    if (g === "F") {return d.getUTCDate() + 40} else {
+        if (d.getUTCDate() >= 10) {return d.getUTCDate()} else {return "0"+d.getUTCDate()}
+    }
 
 }
 
