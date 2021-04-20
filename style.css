@@ -11,7 +11,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 8px;
+    margin: 4px 8px 8px 8px;
 }
 
 /* Box Codice Fiscale */
@@ -147,10 +147,10 @@
     box-shadow: 0 4px 8px rgba(46, 139, 87, 0.5);
     border-radius: 5px;
     text-align: center;
+    background-color: seagreen;
 }
 
 .output-container #output {
     font-family: 'Orelega One', cursive;
     font-size: 35px;   
-    /* color: seagreen; */
 }
